@@ -76,12 +76,12 @@ start_1 = "kedi"
 end_1 = "kuçu"
 
 ladder_1 = find_word_ladder(start_1, end_1, sample_dictionary_1)
-print(f"Sözlük 1 - '{start_1}' -> '{end_1}': {' -> '.join(ladder_1) if ladder_1 else 'Yol bulunamadı.'}")
+print(f"Sözlük 1 - '{start_1}' -> '{end_1}': {' -> '.join(ladder_1) if ladder_1 else 'Yol bulunamadı.'} (Adım sayısı: {len(ladder_1)-1 if ladder_1 else 0})")
 
 start_1_b = "masa"
 end_1_b = "şaka"
 ladder_1_b = find_word_ladder(start_1_b, end_1_b, sample_dictionary_1)
-print(f"Sözlük 1 - '{start_1_b}' -> '{end_1_b}': {' -> '.join(ladder_1_b) if ladder_1_b else 'Yol bulunamadı.'}")
+print(f"Sözlük 1 - '{start_1_b}' -> '{end_1_b}': {' -> '.join(ladder_1_b) if ladder_1_b else 'Yol bulunamadı.'} (Adım sayısı: {len(ladder_1_b)-1 if ladder_1_b else 0})")
 
 
 # Sözlük 2: Daha Uzun Kelimeler ve Farklı Bağlantılar
@@ -90,12 +90,12 @@ start_2 = "elma"
 end_2 = "arka"
 
 ladder_2 = find_word_ladder(start_2, end_2, sample_dictionary_2)
-print(f"Sözlük 2 - '{start_2}' -> '{end_2}': {' -> '.join(ladder_2) if ladder_2 else 'Yol bulunamadı.'}")
+print(f"Sözlük 2 - '{start_2}' -> '{end_2}': {' -> '.join(ladder_2) if ladder_2 else 'Yol bulunamadı.'} (Adım sayısı: {len(ladder_2)-1 if ladder_2 else 0})")
 
 start_2_b = "kuzu"
 end_2_b = "dolu"
 ladder_2_b = find_word_ladder(start_2_b, end_2_b, sample_dictionary_2)
-print(f"Sözlük 2 - '{start_2_b}' -> '{end_2_b}': {' -> '.join(ladder_2_b) if ladder_2_b else 'Yol bulunamadı.'}")
+print(f"Sözlük 2 - '{start_2_b}' -> '{end_2_b}': {' -> '.join(ladder_2_b) if ladder_2_b else 'Yol bulunamadı.'} (Adım sayısı: {len(ladder_2_b)-1 if ladder_2_b else 0})")
 
 
 # Sözlük 3: Yolun Bulunamadığı Durum
@@ -104,7 +104,7 @@ start_3 = "ev"
 end_3 = "gül"
 
 ladder_3 = find_word_ladder(start_3, end_3, sample_dictionary_3)
-print(f"Sözlük 3 - '{start_3}' -> '{end_3}': {' -> '.join(ladder_3) if ladder_3 else 'Yol bulunamadı.'}")
+print(f"Sözlük 3 - '{start_3}' -> '{end_3}': {' -> '.join(ladder_3) if ladder_3 else 'Yol bulunamadı.'} (Adım sayısı: {len(ladder_3)-1 if ladder_3 else 0})")
 
 # Sözlük 4: Başlangıç ve Bitiş Kelimelerinin Aynı Olduğu Durum
 sample_dictionary_4 = ["test", "tost", "post"]
@@ -112,5 +112,4 @@ start_4 = "test"
 end_4 = "test"
 
 ladder_4 = find_word_ladder(start_4, end_4, sample_dictionary_4)
-print(f"Sözlük 4 - '{start_4}' -> '{end_4}': {' -> '.join(ladder_4) if ladder_4 else 'Yol bulunamadı.'}")
-
+print(f"Sözlük 4 - '{start_4}' -> '{end_4}': {' -> '.join(ladder_4) if ladder_4 else 'Yol bulunamadı.'} (Adım sayısı: {len(ladder_4)-1 if ladder_4 else 0})")
